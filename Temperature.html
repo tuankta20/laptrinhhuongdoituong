@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Rectangle(c,f,k) {
+        this.c=c;
+        this.f=f;
+        this.k=k;
+        this.doisangk =function() {
+            return this.k=this.c+273,15;
+        }
+       this.doisangf=function() {
+           return this.f=this.c*1.8000 +32;
+        }
+    }
+    var exam= new Rectangle(25);
+    var dok=exam.doisangk();
+    alert("Độ K:" +dok);
+    var dof=exam.doisangf();
+    alert("Độ F:" + dof);
+</script>
+</body>
+</html>

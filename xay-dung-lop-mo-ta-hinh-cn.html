@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="mycanvas" width="1000px"></canvas>
+<script>
+    function Rectangle(dai,rong,) {
+        this.dai=dai;
+        this.rong=rong;
+        this.dientich=function () {
+            return this.dai*this.rong;
+        }
+        this.chuvi=function () {
+            return (this.dai + this.rong)*2;
+        }
+    }
+    var x = new Rectangle(20,10)
+    var ketqua=x.dientich();
+    alert(ketqua);
+    var ketQua=x.chuvi();
+    alert(ketQua);
+    var c=document.getElementById("mycanvas");
+    var ctx=c.getContext('2d');
+    ctx.rect(0,60,120,60);
+    ctx.stroke();
+</script>
+</body>
+</html>
